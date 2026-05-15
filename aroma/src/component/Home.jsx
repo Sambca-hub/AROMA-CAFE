@@ -8,7 +8,7 @@ const Home = () => {
         <center><h1>Welcome to Aroma Cafe</h1>
         <p>Experience the best coffee in town with us!</p>
         <Link><button className='btn'>Explore Menu</button></Link>    
-        </center> 
+        </center>
     </div>
   )
 }
