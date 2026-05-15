@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 
 import Home from "./component/Home";
 import About from "./component/About";
@@ -8,6 +8,7 @@ import "./App.css";
 import Reserve from "./component/Reserve";
 import Discount from "./component/Discount";
 function App() {
+     const navigate = useNavigate();
   return (
     <>
       <nav>
@@ -22,7 +23,7 @@ function App() {
           <li><Link to="/contact">Contact</Link></li>
         </ul>
         <Link to="/reserve"></Link>
-      <button className="btn" onClick={() => window.location.href = '/reserve'}>Reserve Now</button>
+      <button className="btn" onClick={() => navigate('/reserve')}>Reserve Now</button>
       </nav>
 
       <Routes>
