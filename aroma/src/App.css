@@ -1,0 +1,305 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f5f2;
+  color: #333;
+}
+
+/* Navbar */
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: #111;
+  position: sticky;
+  top: 0;
+}
+
+.logo{
+  font-size: 32px;
+  font-weight: bold;
+  color: #d4a762;
+  letter-spacing: 1px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+ul li a:hover{
+  color: #d4a762;
+}
+
+/* Hero Section */
+
+.hero{
+  height: 90vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
+    ),
+    url("https://plus.unsplash.com/premium_photo-1670984940259-26ec102ff547?");
+    
+  background-size: cover;
+  background-position: center;
+gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content{
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-content h1{
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.home-content p{
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #eee;
+}
+
+/* Button */
+
+.btn{
+  display: inline-block;
+  padding: 14px 32px;
+  background: rgba(212, 72, 6, 0.438);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  list-style: none;
+}
+
+.btn:hover{
+  background: #b88645;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+
+@media(max-width: 768px){
+
+  nav{
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  ul{
+    gap: 18px;
+  }
+
+  .home-content h1{
+    font-size: 40px;
+  }
+
+  .home-content p{
+    font-size: 18px;
+  }
+}
+.menu{
+  background-image: url("https://plus.unsplash.com/premium_photo-1665669248059-0a70291944f5?");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  
+}
+.about{
+  background-image: url("https://images.unsplash.com/photo-1447933601403-0c6688de566e?");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color: white;
+}
+.reserve{
+  background-image: url("https://images.unsplash.com/photo-1453614512568-c4024d13c247?");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+ justify-content: center;
+  color: white;
+  font-size: 48px;
+  
+}
+.contact{
+  background-image: url("https://images.unsplash.com/photo-1556742393-d75f468bfcb0?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+} 
+form{
+   background: rgb(75, 46, 46, 0.8);
+      border-radius: 16px;
+  width: 350px;
+  padding-left: 60px;
+  align-content: center;
+  justify-content: center;
+font-size: small;
+height: 500px;
+margin-top: 50px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); 
+
+}
+h4{
+  color: burlywood;
+}
+
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+   font-style: italic;
+  color: #d4a762;
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: white;
+   font-style: italic;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.about-content {
+  margin-top: 20px;
+}
+
+.card {
+  width: 250px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  height: fit-content;
+
+  /* Animation */
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Title */
+.card h3 {
+  margin-top: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Price */
+.card h4 {
+  color: brown;
+  margin: 10px 0;
+}
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.about-container {
+  display: flex;
+ 
+  padding: 40px;
+  gap: 40px;
+} 
+.about-container img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.discount{
+  background-image: url("https://plus.unsplash.com/premium_photo-1675716443562-b771d72a3da7?");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.title1{
+  font-size: 24px;
+  font-weight: bold;
+   font-style: italic;
+  color: #ceb186;
+ text-align: center;
+ margin-bottom: 10px;
+}
+.title2{
+  font-size: 24px;
+  font-weight: bold;
+   font-style: italic;
+  color: #af7113;
+ text-align: center;
+ margin-bottom: 10px;
+}
+form input, form textarea, form select{
+  border: none;
+ border-radius: 8px;
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 80%;
+}
+.marquee-text{
+  font-size: 18px;
+  color: whitesmoke;
+   font-style: italic;
+  font-weight: bold;
+}
